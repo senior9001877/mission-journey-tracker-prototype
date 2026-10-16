@@ -1,0 +1,3 @@
+Trigger commit to run SVG->PNG workflow
+Timestamp: 2026-10-16T08:46:00Z
+This file triggers the GitHub Action to render the SVG to PNG.
