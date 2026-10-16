@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #ffffff }
+    .header { font-family: 'Segoe UI', Roboto, Arial; fill: #0f172a; font-weight:700 }
+    .sub { font-family: 'Segoe UI', Roboto, Arial; fill: #475569 }
+    .kpititle { font-family: 'Segoe UI', Roboto, Arial; fill: #94a3b8; font-size:12px }
+    .kpinum { font-family: 'Segoe UI', Roboto, Arial; fill: #0f172a; font-weight:700 }
+    .tile { fill: #f8fafc; stroke: #e2e8f0; rx:10 }
+    .accent { fill: #1f77b4 }
+    .positive { fill: #2e8b57 }
+    .alert { fill: #e74c3c }
+    .muted { fill: #64748b }
+    .funnel-step { fill: #c7e9ff; stroke: #9fd3ff }
+    .funnel-step.alt { fill: #eaf6ff; stroke: #cdeeff }
+    .funnel-text { font-family: 'Segoe UI', Roboto, Arial; fill: #0f172a; font-size:13px }
+    .small { font-size:11px }
+    .callout { fill: #fff7ed; stroke: #ffedd5; rx:8 }
+  </style>
+
+  <rect class="bg" width="1200" height="675" />
+
+  <!-- Header -->
+  <text x="40" y="48" class="header" font-size="22">Mission Journey Tracker — Riverside Foodie Trail (M01)</text>
+  <text x="40" y="70" class="sub" font-size="13">Theme: Food journey · 2026-04-01 → 2026-04-30 · Target: Thai families & office workers</text>
+
+  <!-- KPI tiles -->
+  <g transform="translate(40,95)">
+    <rect class="tile" width="200" height="72" />
+    <text x="14" y="30" class="kpititle">Participants</text>
+    <text x="14" y="54" class="kpinum" font-size="20">2,450</text>
+
+    <g transform="translate(220,0)">
+      <rect class="tile" width="200" height="72" />
+      <text x="14" y="30" class="kpititle">Completers</text>
+      <text x="14" y="54" class="kpinum" font-size="20">412</text>
+    </g>
+
+    <g transform="translate(440,0)">
+      <rect class="tile" width="200" height="72" />
+      <text x="14" y="30" class="kpititle">Completion %</text>
+      <text x="14" y="54" class="kpinum" font-size="20">16.8%</text>
+    </g>
+
+    <g transform="translate(660,0)">
+      <rect class="tile" width="200" height="72" />
+      <text x="14" y="30" class="kpititle">Total incremental spend (THB)</text>
+      <text x="14" y="54" class="kpinum" font-size="20">1,200,000</text>
+    </g>
+
+    <g transform="translate(880,0)">
+      <rect class="tile" width="200" height="72" />
+      <text x="14" y="30" class="kpititle">ROI (inc THB / cost THB)</text>
+      <text x="14" y="54" class="kpinum" font-size="20">0.67</text>
+    </g>
+  </g>
+
+  <!-- Left: Funnel -->
+  <g transform="translate(60,190)">
+    <text class="sub" x="0" y="0" font-size="16">Journey Funnel</text>
+
+    <!-- Steps (bars) -->
+    <!-- Step 1 -->
+    <g transform="translate(0,20)">
+      <rect x="0" y="10" width="560" height="36" class="funnel-step" rx="6"/>
+      <text x="12" y="34" class="funnel-text">1 · Start / Food hall check-in — 2,450 (100%)</text>
+    </g>
+    <!-- Step 2 -->
+    <g transform="translate(0,70)">
+      <rect x="0" y="10" width="460" height="36" class="funnel-step alt" rx="6"/>
+      <text x="12" y="34" class="funnel-text">2 · SOOKSIAM street-food stamp — 2,010 (82%)</text>
+    </g>
+    <!-- Step 3 (worst drop highlighted) -->
+    <g transform="translate(0,120)">
+      <rect x="0" y="10" width="252" height="36" class="funnel-step" rx="6" stroke="#ff7b7b"/>
+      <text x="12" y="34" class="funnel-text">3 · River Park kiosk (outdoor) — 1,127 (46%)</text>
+    </g>
+    <!-- Step 4 -->
+    <g transform="translate(0,170)">
+      <rect x="0" y="10" width="144" height="36" class="funnel-step alt" rx="6"/>
+      <text x="12" y="34" class="funnel-text">4 · Dessert lane stamp — 637 (26%)</text>
+    </g>
+    <!-- Step 5 -->
+    <g transform="translate(0,220)">
+      <rect x="0" y="10" width="92" height="36" class="funnel-step" rx="6"/>
+      <text x="12" y="34" class="funnel-text">5 · Redeem at Concierge — 412 (16.8%)</text>
+    </g>
+
+    <!-- Funnel note -->
+    <text x="0" y="280" class="small muted">Clicking a step (interactive in prototype) would show comments and actions for that step.</text>
+  </g>
+
+  <!-- Right: Callout & drivers -->
+  <g transform="translate(660,190)">
+    <rect class="callout" x="0" y="0" width="460" height="220" />
+    <text x="16" y="30" class="header" font-size="16">Worst step: River Park kiosk (outdoor)</text>
+    <text x="16" y="56" class="muted small">Drop-off: 36% (from 82% → 46%) — strongest leak in journey</text>
+
+    <text x="16" y="86" class="sub" font-size="13">Top shopper comment</text>
+    <rect x="16" y="92" width="428" height="48" rx="6" fill="#ffffff" stroke="#e6e6e6" />
+    <text x="26" y="118" class="funnel-text" font-size="13">"Couldn't scan the QR at River Park, network was down."</text>
+
+    <text x="16" y="156" class="sub" font-size="13">Evidence</text>
+    <text x="16" y="174" class="small muted">• 42 survey mentions: 'River Park' / 'network' / 'hot' • Weekend concierge queue reports</text>
+
+    <text x="16" y="198" class="sub" font-size="13">Recommended quick fixes</text>
+    <text x="34" y="216" class="small">1) Add shaded staffed kiosk on weekends</text>
+    <text x="34" y="232" class="small">2) Offline QR / manual stamp fallback</text>
+    <text x="34" y="248" class="small">3) Update LINE start message with clear map + landmark</text>
+  </g>
+
+  <!-- Bottom: Segment & channel summary strip -->
+  <g transform="translate(40,440)">
+    <text class="sub" x="0" y="0" font-size="14">Segment incremental spend (avg vs baseline)</text>
+    <!-- Bars -->
+    <g transform="translate(0,12)">
+      <rect x="0" y="18" width="180" height="18" fill="#eef2ff" rx="6" />
+      <text x="8" y="32" class="small">Thai family +600 THB</text>
+
+      <rect x="200" y="18" width="120" height="18" fill="#eef2ff" rx="6" />
+      <text x="208" y="32" class="small">Office worker +200 THB</text>
+
+      <rect x="340" y="18" width="50" height="18" fill="#eef2ff" rx="6" />
+      <text x="348" y="32" class="small">Gen Z +50 THB</text>
+
+      <rect x="420" y="18" width="0" height="18" fill="#fff5f5" rx="6" />
+      <text x="428" y="32" class="small">Tourist CN 0 THB</text>
+
+      <rect x="540" y="18" width="200" height="18" fill="#eef2ff" rx="6" />
+      <text x="548" y="32" class="small">Tourist other +200 THB</text>
+    </g>
+
+    <!-- Channel completion small chart -->
+    <g transform="translate(0,60)">
+      <text class="sub" x="0" y="0" font-size="14">Join channel completion rate</text>
+      <rect x="0" y="12" width="120" height="12" fill="#dbeafe" rx="6" />
+      <text x="4" y="22" class="small">QR poster — 20% complete</text>
+      <rect x="0" y="40" width="120" height="12" fill="#fee2e2" rx="6" />
+      <text x="4" y="50" class="small">LINE push — 10% complete</text>
+    </g>
+  </g>
+
+  <!-- Footer: One-line executive summary -->
+  <g transform="translate(40,600)">
+    <rect x="0" y="0" width="1120" height="56" fill="#f8fafc" stroke="#e2e8f0" rx="8" />
+    <text x="16" y="34" class="kpinum" font-size="16">Executive summary: M01 — 2,450 starters → 412 completers (16.8%); incremental spend THB 1.2M; ROI 0.67. Primary leak: River Park kiosk — fix with shaded/staffed kiosk + offline QR. (See recommended actions)</text>
+  </g>
+
+</svg>
